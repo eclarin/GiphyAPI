@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Homework -- 6</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+<form class="form-inline" id="sportSearch">
+  <div class="form-group">
+    <label for="sportInput">Search for your favorite Sports related GIPHY!</label>
+    <input type="text" id="sportInput">
+  </div>
+  <!-- Button triggers sport to be added -->
+  <input id="addSport" type="submit" value="submit">
+</form> <br>
+
+  <!-- Below are the starting buttons upon page load. Note, bootstrap styling. -->
+ <div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="sport" data-search="NBA">NBA</button>
+      <button class="btn btn-primary" id="sport" data-search="NFL">NFL</button>
+      <button class="btn btn-primary" id="sport" data-search="MLB">MLB</button>
+      <button class="btn btn-primary" id="sport" data-search="NHL">NHL</button>
+	  <button class="btn btn-primary" id="sport" data-search="Soccer">Soccer</button>
+	  <button class="btn btn-primary" id="sport" data-search="Sports Fail">Sports Fails</button>
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+<div class="row">
+  <div class="container">
+      <span><div id="added-gifs"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+
+<!-- JQUERY below. Note: will add a separate .js file, once everything works... -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js.js"> </script>
+
+</body>
+</html>
